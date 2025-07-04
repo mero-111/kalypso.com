@@ -1,0 +1,213 @@
+:root {
+    --bg: #fff6e3;
+    --text: #3e2c2c;
+    --accent: #e2cda6;
+    --card-bg: #452512;
+    --footer-bg: #160c00;
+    --border: #d6d6d6;
+}
+
+* {
+    scroll-behavior: smooth;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--card-bg);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 999;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.5s ease;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.5s ease;
+}
+
+nav ul li a:hover {
+    color: var(--text);
+}
+
+
+#MenuTit{
+    margin-top: 40px;
+    height: 200px;
+    background-image: url(photos/menu.jfif);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 3rem;
+    color: #FFF;
+    padding: 4rem 1rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+h1{
+    color: var(--accent);
+    font-size: 3rem;
+}
+
+h2{
+    margin: 0 2.5rem;
+    border-top: var(--border) solid 1px;
+    padding-bottom: 3rem;
+    color: #d1b176;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h4{
+    margin: 0;
+}
+
+.price,h3{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.all_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.organizeEn{
+    width: 35%;
+    text-align: start;
+    margin-left: 5px;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+
+.organizeAr{
+    width: 35%;
+    text-align: end;
+    margin-right: 5px;
+}
+
+.menu-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.menu-cards div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 180px;
+    height: 330px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 60px;
+    color: var(--text);
+}
+
+.menu-cards div img{
+    border-radius: 10px;
+}
+
+.btnRight{
+    display: flex;
+    justify-content: end;
+    padding: 0 10%;
+}
+
+
+.btnRight button{
+    font-size: 40px;
+    background: none;
+    border: none;
+    margin: 5px;
+    padding-right: 10px;
+    transition: all ease 0.3s;
+    color: var(--text);
+}
+
+.btnRight button:hover{
+    padding-right: 0;
+}
+
+.seeBtn{
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+    background-color: var(--accent);
+    color: var(--text);
+    font-size: 20px;
+}
+
+.seeBtn:hover{
+    background-color: var(--text);
+}
+
+footer {
+  background-color: var(--footer-bg);
+  text-align: center;
+  margin-top: 2rem;
+  padding: 20px;
+  transition: background-color 0.5s ease;
+
+}
+
+#shesha{
+    background-image: url(photos/shisha_bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 40%;
+}
+
+footer p{
+  color: #fff;
+}
+
+footer a {
+  margin: 0 10px;
+  color: var(--accent);
+}
+
+
+.hidden{
+    display: none;
+}
+

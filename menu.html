@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalypso Menu</title>
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+    <div class="logo" id="logo">Kalypso Coffee</div>
+    <ul>
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="#MenuTit">menu</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#about">About</a></li>
+    </ul>
+  </nav>
+
+
+  <div id="MenuTit">
+    Kalypso
+    <br>
+    Menu
+  </div>
+<br>
+<br>
+<br>
+
+<section class="menu-cards">
+
+<div>
+  <img src="photos/coffee.jfif">
+  <h3>coffee</h3>
+  <button class="seeBtn" onclick="show(coffeeCon)">see</button>
+</div>
+
+<div>
+  <img src="photos/hot-drink.jpg">
+  <h3>hot drink</h3>
+  <button class="seeBtn" onclick="show(hotDrink)">see</button>
+</div>
+
+<div>
+  <img src="photos/cold-drink.jpg">
+  <h3>cold drink</h3>
+  <button class="seeBtn" onclick="show(coldDrink)">see</button>
+</div>
+
+<div>
+  <img src="photos/soda-photo.jfif">
+  <h3>soda</h3>
+  <button class="seeBtn" onclick="show(sodaSec)">see</button>
+</div>
+
+<div>
+  <img src="photos/juice1.jfif">
+  <h3>juice</h3>
+  <button class="seeBtn" onclick="show(freshjuice)">see</button>
+</div>
+
+<div>
+  <img src="photos/dessert-photo.jfif">
+  <h3>dessert</h3>
+  <button class="seeBtn" onclick="show(dessert)">see</button>
+</div>
+
+<div>
+  <img src="photos/shesha-photo.jfif">
+  <h3>shisha</h3>
+  <button class="seeBtn" onclick="show(shisha)">see</button>
+</div>
+
+</section>
+
+
+
+
+
+<div id="menu">
+  <div class="coffee hidden" id="coffeeCon"><div class="btnRight">
+    <button onclick="hide(coffeeCon)">
+      <i class="fa-solid fa-circle-chevron-right"></i>
+    </button>
+  </div>
+  <div id="coffee"></div>
+  <div id="espresso"></div>
+</div>
+
+  <div class="hot-drink hidden" id="hotDrink">
+    <div class="btnRight">
+      <button onclick="hide(hotDrink)">
+        <i class="fa-solid fa-circle-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="cold-drink hidden" id="coldDrink">
+    <div class="btnRight">
+      <button onclick="hide(coldDrink)">
+        <i class="fa-solid fa-circle-chevron-right"></i>
+      </button>
+    </div>
+    <div id="iceCoffee"></div>
+    <div id="frappe"></div>
+    <div id="milkShake"></div>
+  </div>
+
+  <div class="soda hidden" id="sodaSec">
+    <div class="btnRight">
+      <button onclick="hide(sodaSec)">
+        <i class="fa-solid fa-circle-chevron-right"></i>
+      </button>
+    </div>
+    <div id="soda"></div>
+    <div id="mojito"></div>
+  </div>
+
+  <div class="freshjuice hidden" id="freshjuice">
+    <div class="btnRight">
+      <button onclick="hide(freshjuice)">
+        <i class="fa-solid fa-circle-chevron-right"></i>
+      </button>
+    </div>
+    <div id="juice"></div>
+    <div id="smoothie"></div>
+    <div id="mix"></div>
+  </div>
+
+  <div class="dessert hidden" id="dessert">
+    <div class="btnRight">
+      <button onclick="hide(dessert)">
+        <i class="fa-solid fa-circle-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="shisha hidden" id="shisha">
+    <div class="btnRight">
+      <button onclick="hide(shisha)">
+        <i class="fa-solid fa-circle-chevron-right"></i>
+    </button>
+  </div>
+</div>
+
+</div>
+
+
+  
+
+
+
+
+<footer>
+    <p>Follow us on 
+      <a href="#" target="_blank">Instagram</a> 
+      <a href="#" target="_blank">Facebook</a>
+    </p>
+    <p>veiw on
+      <a href="https://maps.app.goo.gl/CWerC7doyWaQg1ov5" target="_blank">map</a>
+    </p>
+    <p>connect
+      <a>+20 114 771 0910</a>
+    </p>
+  </footer>
+<script src="menu.js"></script>
+</body>
+</html>

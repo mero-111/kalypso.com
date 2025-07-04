@@ -1,0 +1,160 @@
+:root {
+      --bg: #fff4dc;
+      --text: #3e2c2c;
+      --accent: #e2cda6;
+      --card-bg: #452512;
+      --footer-bg: #160c00;
+    }
+
+* {
+  scroll-behavior: smooth;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--card-bg);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 999;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.5s ease;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.5s ease;
+}
+
+nav ul li a:hover {
+  color: var(--text);
+}
+
+section {
+  padding: 80px 20px 60px;
+  max-width: 1000px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out, background-color 0.5s ease, color 0.5s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+#home h1 {
+  font-size: 3rem;
+  color: var(--accent);
+}
+
+#home p {
+  max-width: 600px;
+  font-size: 1.2rem;
+}
+
+#home img {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+#services h2{
+    text-align: center;
+}
+
+.services-content{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: var(--accent);
+}
+
+.spanDesc{
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.services-content div{
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  flex: 1 1 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer {
+  background-color: var(--footer-bg);
+  text-align: center;
+  padding: 20px;
+}
+
+footer p{
+  color: #fff;
+}
+
+footer a {
+  margin: 0 10px;
+  color: var(--accent);
+}
+
+#about{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+#about img{
+    width: 20rem;
+    border-radius: 10px;
+}
+
+
+
