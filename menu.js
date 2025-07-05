@@ -44,15 +44,13 @@ for (const [divID, sheetName] of Object.entries(sheetMap)) {
         const mixEn = row.c[4]?.v || "";
         const mixAr = row.c[5]?.v || "";
 
-        // تجاهل الصف لو التصنيف فاضي
         if (!classification) return;
 
         if (!categoryContainers[classification]) {
           const section = document.createElement("div");
           section.className = "category-block";
           section.dataset.type = classification;
-
-          // ✅ إضافة h2 لعرض اسم التصنيف
+          
           const header = document.createElement("h2");
           header.textContent = classification;
           header.className = "loader";
@@ -67,7 +65,7 @@ for (const [divID, sheetName] of Object.entries(sheetMap)) {
         block.classList.add("content-block");
 
         block.innerHTML = `
-          <div class="loader all_content menu-style" data-type="${classification}">
+          <div class="loader all_content menu-style ${classification}" data-type="${classification}">
             <div class="organizeEn"><h3>${titleEn}</h3><h4>${mixEn}</h4></div>
             <p class="price">${price} L.E</p>
             <div class="organizeAr"><h3>${titleAr}</h3><h4>${mixAr}</h4></div>
@@ -83,7 +81,17 @@ for (const [divID, sheetName] of Object.entries(sheetMap)) {
     });
 }
 
+function organizeSHISHA() {
+  const shishaOenH3 = document.querySelectorAll(".content-block .shisha .organizeEn h3");
+  const shishaP = document.querySelectorAll(".shisha p");
 
+  for (let i = 0; i < shishaOenH3.length && i < shishaP.length; i++) {
+    if (shishaP[i].textContent.trim() !== "") {
+      shishaOenH3[i].textContent = shishaP[i].textContent;
+      shishaP[i].textContent = "";
+    }
+  }
+}
 
 function scrollToTop() {
   window.scrollTo({
@@ -101,7 +109,7 @@ function show(cls){
   menuCard.classList.add("hidden")
   MenuTit.style.backgroundImage = `url('photos/${cls.id}.jpg')`
   scrollToTop()
-  
+  organizeSHISHA()
 }
 
 function hide(cls){
