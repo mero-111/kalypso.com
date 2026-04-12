@@ -82,11 +82,12 @@ h1{
 
 h2{
     margin: 0 2.5rem;
-    border-top: var(--border) solid 1px;
+    border-top: #d1b176 solid 1px;
     padding-bottom: 3rem;
     color: #d1b176;
     font-size: 3rem;
     font-weight: 700;
+    width: 100%;
 }
 
 h4{
@@ -154,6 +155,7 @@ p{
     padding: 0 10%;
     position: sticky;
     top: 100px;
+    z-index: 999;
 }
 
 
@@ -214,3 +216,84 @@ footer a {
     display: none;
 }
 
+
+.organizeIMG{
+    height: 220px;
+    margin: 0;
+    position: relative;
+    top: 100px;
+}
+
+
+.organizeIMG img{
+    width: 100%;
+    margin: 0;
+    border-radius: 20%;
+}
+
+.foodMenuStyle{
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px 30px 10px 10px;
+}
+
+.foodMenuStyle .discCONT{
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: #ffefcb;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    border-radius: 30px 30px 10px 10px;
+}
+
+.discCONT h3,.discCONT h4,.discCONT p{
+    width: 100%;
+}
+
+.foodMenuStyle h3{
+    font-size: 25px;
+    font-weight: 700;
+    border-bottom: solid 1px #e7cda6;
+}
+
+.foodMenuStyle h4{
+    font-size: 13px;
+    color: #422d20;
+}
+
+.foodMenuStyle p{
+    font-weight: 700;
+}
+
+.organizeFoodMenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.p{
+    display: flex;
+    width: 100%;
+}
+
+.category-block{
+    width: 100%;
+}
+
+details{
+    width: 100%;
+}
+
+.summary{
+    width: 100%;
+}
