@@ -12,7 +12,7 @@ const sheetMap = {
   smoothie: "smoothie",
   mix: "mix",
   dessert: "dessert",
-  shisha: "shisha"
+  shisha: "shisha",
 };
 
 const coffee = document.getElementById("coffee")
@@ -23,6 +23,7 @@ const dessert = document.getElementById("dessert")
 const shisha = document.getElementById("shisha")
 const menuCard = document.querySelector(".menu-cards")
 const MenuTit = document.getElementById("MenuTit")
+const menutextedTitle = document.querySelector(".menutextedTitle")
 
 for (const [divID, sheetName] of Object.entries(sheetMap)) {
   const container = document.getElementById(divID);
@@ -104,7 +105,7 @@ function scrollToTop() {
 
 
 function show(cls){
-
+  menutextedTitle.classList.add("hidden")
   cls.classList.remove("hidden")
   menuCard.classList.add("hidden")
   MenuTit.style.backgroundImage = `url('photos/${cls.id}.jpg')`
@@ -113,9 +114,17 @@ function show(cls){
 }
 
 function hide(cls){
+  menutextedTitle.classList.remove("hidden")
+  scrollToTop()
   cls.classList.add("hidden")
   menuCard.classList.remove("hidden")
   MenuTit.style.backgroundImage = `url('photos/menu.jfif')`
 }
 
-//shesha
+
+
+
+
+
+
+
