@@ -22,15 +22,30 @@
 
 
   <div id="MenuTit">
-    Kalypso
+    <div class="menutextedTitle">
+      Kalypso
     <br>
     Menu
+    </div>
   </div>
 <br>
 <br>
 <br>
 
 <section class="menu-cards">
+
+  <div>
+  <img src="photos/food-photo.jpg">
+  <h3>food</h3>
+  <button class="seeBtn" onclick="show(food)">see</button>
+</div>
+
+<div>
+  <img src="photos/dessert-photo.jfif">
+  <h3>dessert</h3>
+  <button class="seeBtn" onclick="show(dessert)">see</button>
+</div>
+
 
 <div>
   <img src="photos/coffee.jfif">
@@ -63,16 +78,12 @@
 </div>
 
 <div>
-  <img src="photos/dessert-photo.jfif">
-  <h3>dessert</h3>
-  <button class="seeBtn" onclick="show(dessert)">see</button>
-</div>
-
-<div>
   <img src="photos/shesha-photo.jfif">
   <h3>shisha</h3>
   <button class="seeBtn" onclick="show(shisha)">see</button>
 </div>
+
+
 
 </section>
 
@@ -138,6 +149,7 @@
     </div>
   </div>
 
+  
   <div class="shisha hidden" id="shisha">
     <div class="btnRight">
       <button onclick="hide(shisha)">
@@ -146,6 +158,27 @@
   </div>
 </div>
 
+
+<div class="food hidden" id="food">
+    <div class="btnRight">
+      <button onclick="hide(food)">
+        <i class="fa-solid fa-circle-chevron-right"></i>
+    </button>
+  </div>
+
+  <div class="sandwichs organizeFoodMenu" id="sandwichs">
+    <h2 class="loader">sandwichs</h2>
+  </div>
+
+  <div class="meals organizeFoodMenu" id="meals">
+    <h2 class="loader">meals</h2>
+  </div>
+
+  
+</div>
+
+
+
 </div>
 
 
@@ -153,11 +186,10 @@
 
 
 
-
 <footer>
     <p>Follow us on 
-      <a href="https://www.instagram.com/kalypso.cafe?igsh=MTQyNnNzM2VlbGJ2dg==" target="_blank">Instagram</a> 
-      <a href="https://www.facebook.com/KalypsoCafe/" target="_blank">Facebook</a>
+      <a href="#" target="_blank">Instagram</a> 
+      <a href="#" target="_blank">Facebook</a>
     </p>
     <p>veiw on
       <a href="https://maps.app.goo.gl/CWerC7doyWaQg1ov5" target="_blank">map</a>
@@ -166,6 +198,8 @@
       <a>+20 114 771 0910</a>
     </p>
   </footer>
+  
 <script src="menu.js"></script>
+<script src="foodMenu.js"></script>
 </body>
 </html>
