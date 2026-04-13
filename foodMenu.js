@@ -1,7 +1,8 @@
 const sheetIDFood = "1YmGnvamXY_j78zMujn7fEIuBH4S2Sd0EKVYwnpxNi50"; 
 const sheetMapFood = {
   sandwichs: "sandwichs",
-  meals: "meals"
+  meals: "meals",
+  appetizers:"appetizers"
 };
 
 
@@ -54,7 +55,7 @@ for (const [divID, sheetName] of Object.entries(sheetMapFood)) {
             <br>
   </div>
         `;
-
+        
         categoryContainers[classification].appendChild(block);
       });
     })
