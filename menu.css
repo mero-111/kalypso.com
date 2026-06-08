@@ -217,6 +217,12 @@ footer a {
 }
 
 
+.category-block h2{
+    width: 90%;
+    margin: 10px;
+}
+
+
 .organizeIMG{
     height: 220px;
     margin: 0;
